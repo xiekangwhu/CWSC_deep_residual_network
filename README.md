@@ -1,8 +1,8 @@
 # CWSC_gridded_based_monthly_water_balance_models
 
-This code contains python code used to deep residual network for Soil moisture storage capacity (SMSC) reconstruction. Deep Residual Network (ResNet), one of the specific types of CNN method, can automatically learn features from large-scale data and generalize the results to unknown data of the same type. 
+This code contains python code used to deep residual network for catchment water storage capacity (CWSC) reconstruction. Deep Residual Network (ResNet), one of the specific types of CNN method, can automatically learn features from large-scale data and generalize the results to unknown data of the same type. 
 
-The inputs of the model include 15 inputs such as global meteorological data, soil and vegetation data, topographical data, and streamflow data. The SMSC parameters on the global grids obtained by the calibration algorithm are taken as the target labels of the model. On grids with KGE greater than 0, SMSC parameters can be obtained by calibration of the hydrological model.
+The inputs of the model include 15 inputs such as global meteorological data, soil and vegetation data, topographical data, and streamflow data. The CWSC parameters on the global grids obtained by the calibration algorithm are taken as the target labels of the model. On grids with KGE greater than 0, CWSC parameters can be obtained by calibration of the hydrological model.
 
 Areas with KGE less than 0 are masked. On grids with KGE greater than zero, the samples are divided into training set and test set according to the ratio of 7:3. The model is run on a GPU (Nvidia Tesla V100 16GB) cluster, and takes 758 microseconds per step, for a total of about one hour. 
 
