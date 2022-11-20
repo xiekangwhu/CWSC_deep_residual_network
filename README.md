@@ -1,4 +1,4 @@
-# SMSC_gridded_based_monthly_water_balance_models
+# CWSC_gridded_based_monthly_water_balance_models
 
 This code contains python code used to deep residual network for Soil moisture storage capacity (SMSC) reconstruction. Deep Residual Network (ResNet), one of the specific types of CNN method, can automatically learn features from large-scale data and generalize the results to unknown data of the same type. 
 
@@ -11,7 +11,7 @@ Major code contributor: Kang Xie (PhD Student, Wuhan University) and Shuanghong 
 
 Abstract
 
-Soil moisture storage capacity (SMSC) links the atmosphere and terrestrial ecosystems, which is required as spatial parameters for geoscientific models, but there are currently no available parameter datasets of SMSC on a global scale especially for hydrological models. Here, we produce a dataset of SMSC parameter for global hydrological models. Parameter calibration of three commonly used monthly water balance models provides the labels for the deep residual network. Calibration on the global grids can significantly reduce parameter discontinuities compared to calibration on individual catchments. The global SMSC is reconstructed at 0.5° resolution by integrating 15 types of meteorological, topographic, and runoff data based on a deep residual network. SMSC products are validated with spatial distribution against root zone depth datasets and validated in terms of simulation efficiency on global grids and 20 catchments from different climatic regions, respectively. We provide the global SMSC parameter dataset as a benchmark for geoscientific modelling by users.
+Catchment water storage capacity (CWSC) links the atmosphere and terrestrial ecosystems, which is required as spatial parameters for geoscientific models. However, there are currently no available common datasets of the CWSC on a global scale, especially for hydrological models since conventional evapotranspiration-derived estimates cannot represent the extra storage capacity for the lateral flow and runoff generation. Here, we produce a dataset of the CWSC parameter for global hydrological models. Joint parameter calibration of three commonly used monthly water balance models provides the labels for a deep residual network. The global CWSC is constructed based on the deep residual network at 0.5° resolution by integrating 15 types of meteorological forcings, underlying surface properties, and runoff data. CWSC products are validated with the spatial distribution against root zone depth datasets and validated in the simulation efficiency on global grids and typical catchments from different climatic regions. We provide the global CWSC parameter dataset as a benchmark for geoscientific modelling by users.
 
 
 Citations
