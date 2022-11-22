@@ -1,4 +1,4 @@
-# CWSC_gridded_based_monthly_water_balance_models
+# CWSC_deep_residual_network
 
 This code contains python code used to deep residual network for catchment water storage capacity (CWSC) reconstruction. Deep Residual Network (ResNet), one of the specific types of CNN method, can automatically learn features from large-scale data and generalize the results to unknown data of the same type. 
 
